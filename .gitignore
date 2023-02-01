@@ -3,7 +3,9 @@
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
 /GGJ-JANUARY/[Ll]ibrary/
+/GGJ-JANUARY/Library/
 /GGJ-JANUARY/[Tt]emp/
+/GGJ-JANUARY/Temp/
 /GGJ-JANUARY/[Oo]bj/
 /GGJ-JANUARY/[Bb]uild/
 /GGJ-JANUARY/[Bb]uilds/
