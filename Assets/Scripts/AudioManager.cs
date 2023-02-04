@@ -10,6 +10,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioClip sceneSwitchSwoosh;
     [SerializeField] AudioClip pilotLaser;
 
+    [SerializeField] AudioClip[] VocalBops;
+
     [Space(10)]
     [SerializeField] AudioSource musicChannel;
     [SerializeField] List<AudioSource> sfxChannels;
@@ -97,6 +99,11 @@ public class AudioManager : MonoBehaviour
     public void PlayPilotLaserSFX()
     {
         PlaySoundEffect(pilotLaser);
+    }
+
+    public void PlayVocalBop(int min, int max) 
+    {
+        PlaySoundEffect(VocalBops[Random.Range(min, max)]);
     }
 
     // This cycles the indices of the sfx channel list and makes "currentSFXChannel" appropriate throughout the class

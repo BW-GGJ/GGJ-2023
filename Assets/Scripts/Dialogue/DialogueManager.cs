@@ -104,6 +104,11 @@ public class DialogueManager : MonoBehaviour
             //TMP, visible increase
             DialogueBox.maxVisibleCharacters++;
 
+            if (c.ToString().ToLower() == "a" || c.ToString().ToLower() == "e" || c.ToString().ToLower() == "i" || c.ToString().ToLower() == "o" || c.ToString().ToLower() == "u") 
+            {
+                AudioManager.instance.PlayVocalBop(16, 22);
+            }
+
             //Sleeps if not interrupted
             if(!isSkip) yield return new WaitForSeconds(LetterSleep);
         }
