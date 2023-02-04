@@ -16,6 +16,7 @@ public class SceneChanger : MonoBehaviour
     [SerializeField] string campfireSceneName;
     [SerializeField] string carryWaterSceneName;
     [SerializeField] string finalTownSceneName;
+    [SerializeField] string openingCinematicScene;
 
     private void Awake()
     {
@@ -58,5 +59,9 @@ public class SceneChanger : MonoBehaviour
     public void LoadFinishTownScene()
     {
         SceneManager.LoadScene(finalTownSceneName);
+    }
+    public void LoadOpeningCinematicScene()
+    {
+        SceneManager.LoadScene(openingCinematicScene);
     }
 }

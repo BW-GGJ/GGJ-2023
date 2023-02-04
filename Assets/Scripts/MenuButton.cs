@@ -21,6 +21,29 @@ public class MenuButton : MonoBehaviour
     {
         SceneChanger.instance.LoadGameScene();
     }
-    
+    public void LoadOpeningCinematicScene()
+    {
+        SceneChanger.instance.LoadOpeningCinematicScene();
+    }
+    public void LoadStartTownScene()
+    {
+        SceneChanger.instance.LoadStartTownScene();
+    }
+    public void LoadShovelSnowScene()
+    {
+        SceneChanger.instance.LoadShovelSnowScene();
+    }
+    public void LoadCampfireScene()
+    {
+        SceneChanger.instance.LoadCampfireScene();
+    }
+    public void LoadCarryWaterScene()
+    {
+        SceneChanger.instance.LoadCarryWaterScene();
+    }
+    public void LoadFinishTownScene()
+    {
+        SceneChanger.instance.LoadFinishTownScene();
+    }
     #endregion
 }

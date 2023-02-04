@@ -254,6 +254,7 @@ MonoBehaviour:
   campfireSceneName: Level 2 - Campfire
   carryWaterSceneName: Level 3 - Carrying Water
   finalTownSceneName: Finish Town
+  openingCinematicScene: Opening Cinematic Scene
 --- !u!1 &310446827
 GameObject:
   m_ObjectHideFlags: 0
