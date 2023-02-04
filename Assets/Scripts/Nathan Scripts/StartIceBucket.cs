@@ -13,6 +13,8 @@ using UnityEngine;
 public class StartIceBucket : MonoBehaviour
 {
 	[SerializeField] GameObject challengeHud;
+	[SerializeField] GameObject brotherTriggerLink;
+	[SerializeField] BaseAnimator animatorLink;
 
 
     // Start is called before the first frame update
@@ -35,7 +37,10 @@ public class StartIceBucket : MonoBehaviour
 			{
 				Debug.Log("Start");
 				Debug.Log("Bucket Animation");
+				animatorLink.TriggerCarryWater();
 				challengeHud.SetActive(true);
+				brotherTriggerLink.SetActive(true);
+				gameObject.SetActive(false);
 			}
 		}
 	}
