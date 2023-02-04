@@ -15,7 +15,9 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Image Portrait;
     [SerializeField] private GameObject Character, Dialogue;
 
-    private bool isSkip, isPlaying, isAuto, isActive;
+    private bool isSkip, isPlaying, isAuto;
+
+    private bool isActive = true;
 
     private void Awake()
     {
@@ -50,8 +52,6 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        Character.SetActive(isActive);
-
         if (isAuto) 
         {
             if (isPlaying || DialogueDatas.Count == 0) 
