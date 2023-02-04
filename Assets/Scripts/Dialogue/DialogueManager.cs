@@ -78,8 +78,10 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    private IEnumerator AdvanceText() 
+    private IEnumerator AdvanceText()
     {
+        SetActive(true);
+
         if (DialogueDatas.Count <= 0) 
         {
             yield break;
@@ -113,6 +115,8 @@ public class DialogueManager : MonoBehaviour
         if (DialogueDatas.Count <= 0)
         {
             DialogueBox.maxVisibleCharacters = 0;
+
+            SetActive(false);
             yield break;
         }
     }
