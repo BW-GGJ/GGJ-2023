@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00bcfd5af471f7b488c0f3fe040fb997, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gourdAnimator: {fileID: 0}
+  gourdAnimator: {fileID: 319335345102854439}
 --- !u!1 &5566467356538840282
 GameObject:
   m_ObjectHideFlags: 0
