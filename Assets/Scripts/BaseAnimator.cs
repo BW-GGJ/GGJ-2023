@@ -20,11 +20,13 @@ public class BaseAnimator : MonoBehaviour
     {
         deltaPos = (Vector2)(transform.position) - oldPos;
 
-        if (deltaPos.magnitude > .05f)
+        if (deltaPos.magnitude > .005f)
         {
             thisAnimator.SetFloat("XSpeed", deltaPos.x);
             thisAnimator.SetFloat("YSpeed", deltaPos.y);
+            SetRunning(true);
         }
+        else SetRunning(false);
 
         oldPos = transform.position;
     }
