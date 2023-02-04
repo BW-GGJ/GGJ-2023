@@ -16,7 +16,7 @@ public class BaseAnimator : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         deltaPos = (Vector2)(transform.position) - oldPos;
 

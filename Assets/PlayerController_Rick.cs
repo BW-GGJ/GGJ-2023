@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController_Rick : MonoBehaviour
 {
     [SerializeField] float playerSpeed = 5;
+    Vector3 moveVector = Vector3.zero;
 
     // Start is called before the first frame update
     void Start()
@@ -15,7 +16,14 @@ public class PlayerController_Rick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 moveVector = Vector3.zero;
+        
+
+        
+    }
+
+    private void FixedUpdate()
+    {
+        moveVector = Vector3.zero;
 
         if (Input.GetKey(KeyCode.W)) moveVector += Vector3.up;
         if (Input.GetKey(KeyCode.A)) moveVector += Vector3.left;
@@ -23,7 +31,6 @@ public class PlayerController_Rick : MonoBehaviour
         if (Input.GetKey(KeyCode.D)) moveVector += Vector3.right;
 
         moveVector.Normalize();
-
-        transform.Translate(moveVector * Time.deltaTime * playerSpeed);
+        transform.Translate(moveVector * Time.fixedDeltaTime * playerSpeed);
     }
 }
