@@ -35,4 +35,22 @@ public class BaseAnimator : MonoBehaviour
     {
         thisAnimator.SetBool("running", newValue);
     }
+
+    public void TriggerShovel()
+    {
+        thisAnimator.SetTrigger("shovel");
+    }
+
+    public void TriggerCarryWater()
+    {
+        thisAnimator.SetTrigger("CarryWater");
+    }
+    /// <summary>
+    /// Meant for value ranges of 0 to 1, where >.99f triggers the end of the carrying animations
+    /// </summary>
+    /// <param name="instabilityLevel"></param>
+    public void SetCarryWaterInstability(float instabilityLevel)
+    {
+        thisAnimator.SetFloat("instability", instabilityLevel);
+    }
 }
