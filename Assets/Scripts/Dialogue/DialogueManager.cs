@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour
 
     private static List<DialogueData> DialogueDatas = new List<DialogueData>();
     [SerializeField] private float LetterSleep;
+    [SerializeField] private float BigSleep = 1f;
 
     [SerializeField] private TMP_Text DialogueBox;
     [SerializeField] private Image Portrait;
@@ -33,7 +34,10 @@ public class DialogueManager : MonoBehaviour
     {
         DialogueDatas.Add(new DialogueData(Dialogue, Portrait));
     }
-
+    public void AdjustWait(float WaitForSeconds) 
+    {
+        BigSleep = WaitForSeconds;
+    }
     public void SetActive(bool Active)
     {
         Character.SetActive(Active);
@@ -105,7 +109,7 @@ public class DialogueManager : MonoBehaviour
         }
         if (isAuto) 
         {
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(BigSleep);
         }
         isSkip = false;
         isPlaying = false;
