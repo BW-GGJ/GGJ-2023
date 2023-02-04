@@ -217,6 +217,11 @@ MonoBehaviour:
   howToPlaySceneName: HowToPlay
   creditsSceneName: Credits
   gameSceneName: Game
+  startTownSceneName: Start Town
+  shovelSnowSceneName: Level 1 - Shoveling Snow
+  campfireSceneName: Level 2 - Campfire
+  carryWaterSceneName: Level 3 - Carrying Water
+  finalTownSceneName: Finish Town
 --- !u!1 &310446827
 GameObject:
   m_ObjectHideFlags: 0
