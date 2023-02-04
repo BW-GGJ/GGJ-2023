@@ -1,3 +1,12 @@
+/**
+ * CountdownTimer_Nathan.cs
+ * By Nathan Boles
+ * 
+ * This is a simple countdown timer. It only counts in seconds at this time, so no milisecond stuff, but this
+ * does give the attached meterLink a nice ticking motion as the seconds count away.
+ * 
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

@@ -27,6 +27,8 @@ public class IceBucketChallenge : MonoBehaviour
 	[SerializeField] BaseAnimator animatorLink;
 	[Tooltip("The Canvas gameobject that contains all the challenge HUD stuff")]
 	[SerializeField] GameObject challengeHUD;
+	[Tooltip("The trigger collider that starts this challenge")]
+	[SerializeField] GameObject lakeLink;
 	
 	// Start is called before the first frame update
     void Start()
@@ -59,6 +61,7 @@ public class IceBucketChallenge : MonoBehaviour
 			Debug.Log("Game Over");
 			gameOver = true;
 			challengeHUD.SetActive(false);
+			lakeLink.SetActive(true);
 		}
 			
 		//A proper game over scene will likely be called here
