@@ -14,7 +14,7 @@ public class BaseAnimator : MonoBehaviour
     void Start()
     {
         thisAnimator = GetComponent<Animator>();
-        gourdAnimator.gameObject.SetActive(false);
+        if(gourdAnimator != null) gourdAnimator.gameObject.SetActive(false);
     }
 
     // Update is called once per frame

@@ -14,6 +14,8 @@ public class PlayerController_Rick : MonoBehaviour
 
     [SerializeField] GameObject shovelHitPrefab;
 
+    bool controllerDisabled = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,8 @@ public class PlayerController_Rick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (controllerDisabled) return;
+
         if (shovelingAllowed && Input.GetMouseButtonDown(0) && !shoveling)
         {
             GetComponent<BaseAnimator>().TriggerShovel();
@@ -55,5 +59,14 @@ public class PlayerController_Rick : MonoBehaviour
 
         moveVector.Normalize();
         transform.Translate(moveVector * Time.fixedDeltaTime * playerSpeed);
+    }
+
+    public void DisableController()
+    {
+        controllerDisabled = true;
+    }
+    public void EnableController()
+    {
+        controllerDisabled = false;
     }
 }
