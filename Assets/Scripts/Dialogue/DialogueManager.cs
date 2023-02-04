@@ -34,9 +34,9 @@ public class DialogueManager : MonoBehaviour
     {
         DialogueDatas.Add(new DialogueData(Dialogue, Portrait));
     }
-    public void AdjustWait(float WaitForSeconds) 
+    public static void AddDialogue(string Dialogue, Sprite Portrait, float hold)
     {
-        BigSleep = WaitForSeconds;
+        DialogueDatas.Add(new DialogueData(Dialogue, Portrait, hold));
     }
     public void SetActive(bool Active)
     {
@@ -109,7 +109,14 @@ public class DialogueManager : MonoBehaviour
         }
         if (isAuto) 
         {
-            yield return new WaitForSeconds(BigSleep);
+            if (DialogueDatas[0].Hold != 1f)
+            {
+                yield return new WaitForSeconds(DialogueDatas[0].Hold);
+            }
+            else
+            {
+                yield return new WaitForSeconds(BigSleep);
+            }
         }
         isSkip = false;
         isPlaying = false;

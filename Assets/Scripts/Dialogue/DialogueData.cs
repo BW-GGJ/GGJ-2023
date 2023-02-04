@@ -8,8 +8,17 @@ public class DialogueData : MonoBehaviour
     {
         Dialogue = dialogue;
         Portrait = portrait;
+        Hold = 1f;
+    }
+    public DialogueData(string dialogue, Sprite portrait, float hold)
+    {
+        Dialogue = dialogue;
+        Portrait = portrait;
+        Hold = hold;
     }
 
     public string Dialogue { get; set; }
     public Sprite Portrait { get; set; }
+
+    public float Hold { get; set; }
 }
