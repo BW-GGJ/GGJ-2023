@@ -10,7 +10,7 @@ public class DebugSetup : MonoBehaviour
     }
     IEnumerator startfollow() 
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForEndOfFrame();
         CameraStateMachine.instance.SetPlayerFollow();
     }
 }

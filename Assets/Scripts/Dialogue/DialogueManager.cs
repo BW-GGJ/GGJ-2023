@@ -52,6 +52,7 @@ public class DialogueManager : MonoBehaviour
     {
         if(DialogueDatas.Count > 0) StartCoroutine(AdvanceText());
         isAuto = true;
+        SetActive(false);
     }
 
     private void Update()

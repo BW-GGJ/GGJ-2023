@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: f3d56f3a59c83844dbf6847fd05a0a48
-=======
-guid: ec9fb3188a27edf4689f1160c5083c90
->>>>>>> Stashed changes
+guid: cecbb1ed4da06f849bbb5d9921c82eeb
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -13,11 +9,7 @@ ScriptedImporter:
   assetBundleVariant: 
   script: {fileID: 11500000, guid: aaa16bfc62c086f4fb45da87b6acf9b1, type: 3}
   _reimportOnDependencyChange: 1
-<<<<<<< Updated upstream
-  _jsonFile: {fileID: -164016180542632921, guid: f3d56f3a59c83844dbf6847fd05a0a48, type: 3}
-=======
   _jsonFile: {instanceID: 0}
->>>>>>> Stashed changes
   _pixelsPerUnit: 16
   _atlas: {instanceID: 0}
   _customLevelPrefab: {instanceID: 0}
@@ -26,13 +18,7 @@ ScriptedImporter:
   _useCompositeCollider: 1
   _createBackgroundColor: 1
   _createLevelBoundsTrigger: 0
-<<<<<<< Updated upstream
-  _intGridValues:
-  - _key: IntGrid_1
-    _asset: {instanceID: 0}
-=======
   _intGridValues: []
->>>>>>> Stashed changes
   _entities: []
   _enumGenerate: 0
   _enumPath: 

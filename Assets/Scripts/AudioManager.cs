@@ -11,6 +11,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioClip pilotLaser;
 
     [SerializeField] AudioClip[] VocalBops;
+    [SerializeField] AudioClip Pickup;
+    [SerializeField] AudioClip Warn;
 
     [Space(10)]
     [SerializeField] AudioSource musicChannel;
@@ -92,6 +94,14 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void PlayPickup() 
+    {
+        PlaySoundEffect(Pickup);
+    }
+    public void PlayWarn() 
+    {
+        PlaySoundEffect(Warn);
+    }
     public void PlaySceneSwitchSwooshSFX()
     {
         PlaySoundEffect(sceneSwitchSwoosh);

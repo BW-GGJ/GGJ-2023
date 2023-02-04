@@ -20,7 +20,7 @@ public class SceneChanger : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null) instance = this;
+        if (!instance) instance = this;
     }
 
     public void LoadMenuScene()
