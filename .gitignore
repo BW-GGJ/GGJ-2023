@@ -70,3 +70,10 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+
+# Ignore .DS_Store for mac heathens
+.DS_Store
+
+# Proprietary editor extensions used by certain team members
+/[Aa]ssets/Plugins/Editor/ScriptInspector*
