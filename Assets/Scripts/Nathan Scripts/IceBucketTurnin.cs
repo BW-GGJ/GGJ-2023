@@ -5,6 +5,7 @@ using UnityEngine;
 public class IceBucketTurnin : MonoBehaviour
 {
 	[SerializeField] GameObject challengeHud;
+	[SerializeField] BaseAnimator animatorLink;
 
 	private void OnTriggerStay2D(Collider2D collision)
 	{
@@ -14,6 +15,7 @@ public class IceBucketTurnin : MonoBehaviour
 			{
 				Debug.Log("WIN");
 				Debug.Log("Normal Animation");
+				animatorLink.SetCarryWaterInstability(1);
 				challengeHud.SetActive(false);
 			}
 		}

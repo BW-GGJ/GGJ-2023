@@ -23,6 +23,10 @@ public class IceBucketChallenge : MonoBehaviour
 	[Tooltip("The object currently holding the MeterController script that this script interacts with")]
 	[SerializeField] MeterController_Nathan meter;
 
+	[Tooltip("Link the player prefab to here")]
+	[SerializeField] BaseAnimator animatorLink;
+	[Tooltip("The Canvas gameobject that contains all the challenge HUD stuff")]
+	[SerializeField] GameObject challengeHUD;
 	
 	// Start is called before the first frame update
     void Start()
@@ -48,11 +52,13 @@ public class IceBucketChallenge : MonoBehaviour
 					slipMeter = 0;
 			}
 			meter.setMeter(slipMeter);
+			animatorLink.SetCarryWaterInstability(meter.getNormalizedMeter());
 		}
 		else if (!gameOver)
 		{
 			Debug.Log("Game Over");
 			gameOver = true;
+			challengeHUD.SetActive(false);
 		}
 			
 		//A proper game over scene will likely be called here

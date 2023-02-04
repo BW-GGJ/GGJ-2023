@@ -51,4 +51,9 @@ public class MeterController_Nathan : MonoBehaviour
 		fill.color = gradient.Evaluate(slider.normalizedValue);
 	}
 
+	public float getNormalizedMeter()
+	{
+		return slider.normalizedValue;
+	}
+
 }
