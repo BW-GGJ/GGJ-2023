@@ -5,6 +5,7 @@ using UnityEngine;
 public class BaseAnimator : MonoBehaviour
 {
     Animator thisAnimator;
+    [SerializeField] Animator gourdAnimator;
 
     Vector2 deltaPos;
     Vector2 oldPos = Vector2.zero;
@@ -13,6 +14,7 @@ public class BaseAnimator : MonoBehaviour
     void Start()
     {
         thisAnimator = GetComponent<Animator>();
+        gourdAnimator.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -44,6 +46,7 @@ public class BaseAnimator : MonoBehaviour
     public void TriggerCarryWater()
     {
         thisAnimator.SetTrigger("CarryWater");
+        gourdAnimator.gameObject.SetActive(true);
     }
 
     /// <summary>
@@ -53,5 +56,6 @@ public class BaseAnimator : MonoBehaviour
     public void SetCarryWaterInstability(float instabilityLevel)
     {
         thisAnimator.SetFloat("instability", instabilityLevel);
+        if(instabilityLevel > .99f) gourdAnimator.gameObject.SetActive(false);
     }
 }
