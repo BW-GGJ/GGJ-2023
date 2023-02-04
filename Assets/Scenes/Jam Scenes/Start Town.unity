@@ -1379,7 +1379,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -888459695983588072, guid: f3d56f3a59c83844dbf6847fd05a0a48, type: 3}
       propertyPath: m_ColliderPaths.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -888459695983588072, guid: f3d56f3a59c83844dbf6847fd05a0a48, type: 3}
       propertyPath: m_CompositePaths.m_Paths.Array.size
@@ -2261,6 +2261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: map4
       objectReference: {fileID: 0}
+    - target: {fileID: 8167629062797380759, guid: f3d56f3a59c83844dbf6847fd05a0a48, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8849731874002918674, guid: f3d56f3a59c83844dbf6847fd05a0a48, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3117,6 +3121,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1433122195537578760, guid: 9be055976ec17844daf4c454b8b84f8d, type: 3}
   m_PrefabInstance: {fileID: 1433122196588456649}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1340023239 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1433122195537578767, guid: 9be055976ec17844daf4c454b8b84f8d, type: 3}
+  m_PrefabInstance: {fileID: 1433122196588456649}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340023233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e77ee31cb7f2791489e7146dd342f144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1345603619 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8087718996230224786, guid: fa7bfda7a8077cd4a9566fad32fa47a6, type: 3}
@@ -3666,7 +3681,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0638db9b343b604ea697e60e31c20ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerController: {fileID: 0}
+  playerController: {fileID: 1340023239}
+  cinematicDialogElements:
+  - text: You have violated our laws!
+    portrait: {fileID: 1969469236, guid: d0cf8fd2e8c21b045b5091c2ad708a8c, type: 3}
+    duration: 3
+  - text: You are henceforce banished from this village
+    portrait: {fileID: 1969469236, guid: d0cf8fd2e8c21b045b5091c2ad708a8c, type: 3}
+    duration: 4
+  - text: But we'll die out there!  My brother is sick!
+    portrait: {fileID: 21300000, guid: 496da011ee540e0438610034c4f8522b, type: 3}
+    duration: 4
+  - text: Not our problem
+    portrait: {fileID: 1969469236, guid: d0cf8fd2e8c21b045b5091c2ad708a8c, type: 3}
+    duration: 3
+  - text: Bye
+    portrait: {fileID: 1969469236, guid: d0cf8fd2e8c21b045b5091c2ad708a8c, type: 3}
+    duration: 2
+  dialogOnStart: 1
 --- !u!4 &1858148176
 Transform:
   m_ObjectHideFlags: 0
@@ -3944,17 +3976,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 739995533530869953, guid: 4892c856df98cfc4f988c37f0943d67f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1358286952, guid: 1b14389ff2da04d4a9b2aab923ff846c, type: 3}
     - target: {fileID: 739995533530869954, guid: 4892c856df98cfc4f988c37f0943d67f, type: 3}
       propertyPath: m_RootOrder
       value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 739995533530869954, guid: 4892c856df98cfc4f988c37f0943d67f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.727978
+      value: 0.73
       objectReference: {fileID: 0}
     - target: {fileID: 739995533530869954, guid: 4892c856df98cfc4f988c37f0943d67f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.9621882
+      value: -1.85
       objectReference: {fileID: 0}
     - target: {fileID: 739995533530869954, guid: 4892c856df98cfc4f988c37f0943d67f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4009,13 +4045,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sister
       objectReference: {fileID: 0}
+    - target: {fileID: 1433122195537578762, guid: 9be055976ec17844daf4c454b8b84f8d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -380266358, guid: 12fb8ddeeaa0324428ef67e9f2ee0519, type: 3}
     - target: {fileID: 1433122195537578765, guid: 9be055976ec17844daf4c454b8b84f8d, type: 3}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1433122195537578765, guid: 9be055976ec17844daf4c454b8b84f8d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.22
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 1433122195537578765, guid: 9be055976ec17844daf4c454b8b84f8d, type: 3}
       propertyPath: m_LocalPosition.y

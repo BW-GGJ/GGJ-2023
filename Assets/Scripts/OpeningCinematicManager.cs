@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OpeningCinematicManager : MonoBehaviour
 {
-    float loadNextLevelTimer = 18.0f;
+    float loadNextLevelTimer = 13.0f;
     bool loadedNextLevel = false;
 
     [SerializeField] List<Sprite> panelSprites = new List<Sprite>();
@@ -13,7 +13,7 @@ public class OpeningCinematicManager : MonoBehaviour
     float firstPanelTime = 0.0f;
     float secondPanelTime = 3.0f;
     bool secondPanelTriggered = false;
-    float thirdPanelTime = 13.0f;
+    float thirdPanelTime = 8.0f;
     bool thirdPanelTriggered = false;
 
     float panelTimer = 0.0f;

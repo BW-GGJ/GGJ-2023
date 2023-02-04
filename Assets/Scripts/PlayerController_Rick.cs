@@ -48,7 +48,7 @@ public class PlayerController_Rick : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (shoveling) return;
+        if (shoveling || controllerDisabled) return;
 
         moveVector = Vector3.zero;
 
