@@ -29,14 +29,18 @@ public class StartIceBucket : MonoBehaviour
         
     }
 
+	/// <summary>
+	/// An OnTriggerStay that checks if the player is within the trigger. If they are, they can use the Submit button to start the challenge
+	/// </summary>
+	/// <param name="collision">the object that is colliding with this trigger.</param>
 	private void OnTriggerStay2D(Collider2D collision)
 	{
 		if (collision.gameObject.CompareTag("Player"))
 		{
 			if (Input.GetAxis("Submit") > 0)
 			{
-				Debug.Log("Start");
-				Debug.Log("Bucket Animation");
+				//Debug.Log("Start");
+				//Debug.Log("Bucket Animation");
 				animatorLink.TriggerCarryWater();
 				challengeHud.SetActive(true);
 				brotherTriggerLink.SetActive(true);

@@ -51,6 +51,10 @@ public class MeterController_Nathan : MonoBehaviour
 		fill.color = gradient.Evaluate(slider.normalizedValue);
 	}
 
+	/// <summary>
+	/// Returns the current normalized Value of the meter. Useful if you need a number between 0 - 1 that happens to already feed into this.
+	/// </summary>
+	/// <returns>the normalize Value of the slider</returns>
 	public float getNormalizedMeter()
 	{
 		return slider.normalizedValue;
