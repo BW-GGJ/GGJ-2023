@@ -24,7 +24,7 @@ public class IceBucketTurnin : MonoBehaviour
 	{
 		if (collision.gameObject.CompareTag("Player"))
 		{
-			if (Input.GetAxis("Submit") > 0)
+			if (Input.GetAxis("Submit") > 0 || Input.GetAxis("Fire1") > 0)
 			{
 				Debug.Log("WIN");
 				//Debug.Log("Normal Animation");

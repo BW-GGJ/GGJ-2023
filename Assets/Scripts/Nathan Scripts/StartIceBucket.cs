@@ -37,7 +37,7 @@ public class StartIceBucket : MonoBehaviour
 	{
 		if (collision.gameObject.CompareTag("Player"))
 		{
-			if (Input.GetAxis("Submit") > 0)
+			if (Input.GetAxis("Submit") > 0 || Input.GetAxis("Fire1") > 0)
 			{
 				//Debug.Log("Start");
 				//Debug.Log("Bucket Animation");

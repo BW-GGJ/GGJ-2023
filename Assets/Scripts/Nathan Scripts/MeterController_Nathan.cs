@@ -25,7 +25,7 @@ public class MeterController_Nathan : MonoBehaviour
 	/// This sets the maximum value of the slider
 	/// </summary>
 	/// <param name="maxValue">The value to set the maximum slider value at</param>
-	public void setMaxValue(float maxValue)
+	public void SetMaxValue(float maxValue)
 	{
 		slider.maxValue = maxValue;
 	}
@@ -34,7 +34,7 @@ public class MeterController_Nathan : MonoBehaviour
 	/// This simply fully fills the meter to the maximum value
 	/// Useful for healthbar or stuff that is desired to start at full
 	/// </summary>
-	public void fillMeterToMax()
+	public void FillMeterToMax()
 	{
 		slider.value = slider.maxValue;
 		fill.color = gradient.Evaluate(1f);
@@ -45,7 +45,7 @@ public class MeterController_Nathan : MonoBehaviour
 	/// Call this when numbers change to have the Meter change appropriately
 	/// </summary>
 	/// <param name="value">The value to set the current slider value at</param>
-	public void setMeter(float value)
+	public void SetMeter(float value)
 	{
 		slider.value = value;
 		fill.color = gradient.Evaluate(slider.normalizedValue);
@@ -55,7 +55,7 @@ public class MeterController_Nathan : MonoBehaviour
 	/// Returns the current normalized Value of the meter. Useful if you need a number between 0 - 1 that happens to already feed into this.
 	/// </summary>
 	/// <returns>the normalize Value of the slider</returns>
-	public float getNormalizedMeter()
+	public float GetNormalizedMeter()
 	{
 		return slider.normalizedValue;
 	}

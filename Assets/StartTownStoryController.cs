@@ -14,7 +14,8 @@ public class StartTownStoryController : MonoBehaviour
     [SerializeField] List<CinematicDialogElements> cinematicDialogElements = new List<CinematicDialogElements>();
 
     [SerializeField] bool dialogOnStart = false;
-    bool dialogRunning = false;
+	[SerializeField] bool pausePlayer = true; //Since you said I could reverse engineer and adds stuff, I'm just putting this bool here. It helps add some options for gameplay since dialog is automatic anyways. - N
+	bool dialogRunning = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,7 +52,7 @@ public class StartTownStoryController : MonoBehaviour
 
     public void TriggerCinematicEvent()
     {
-        playerController.DisableController();
+		if (pausePlayer) playerController.DisableController();
         NextDialogElement();
         dialogRunning = true;
     }

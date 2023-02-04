@@ -22,8 +22,8 @@ public class CountdownTimer_Nathan : MonoBehaviour
     void Start()
     {
 		timeSecondsRemaining = timeSecondsSet;
-		meterLink.setMaxValue(timeSecondsSet);
-		meterLink.fillMeterToMax();
+		meterLink.SetMaxValue(timeSecondsSet);
+		meterLink.FillMeterToMax();
     }
 
     // Update is called once per frame
@@ -31,16 +31,21 @@ public class CountdownTimer_Nathan : MonoBehaviour
     {
         if (!wait && timeSecondsRemaining > 0)
 		{
-			StartCoroutine(tick());
+			StartCoroutine(Tick());
 			wait = true;
 		}
     }
 
-	IEnumerator tick()
+	IEnumerator Tick()
 	{
 		yield return new WaitForSeconds(1);
 		timeSecondsRemaining--;
-		meterLink.setMeter(timeSecondsRemaining);
+		meterLink.SetMeter(timeSecondsRemaining);
 		wait = false;
+	}
+
+	public int GetTimer()
+	{
+		return timeSecondsRemaining;
 	}
 }

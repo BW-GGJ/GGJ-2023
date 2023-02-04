@@ -33,7 +33,7 @@ public class IceBucketChallenge : MonoBehaviour
 	// Start is called before the first frame update
     void Start()
     {
-		meter.setMaxValue(maxSlipMeter);
+		meter.SetMaxValue(maxSlipMeter);
     }
 
     // Update is called once per frame
@@ -53,12 +53,12 @@ public class IceBucketChallenge : MonoBehaviour
 				if (slipMeter < 0)
 					slipMeter = 0;
 			}
-			meter.setMeter(slipMeter);
-			animatorLink.SetCarryWaterInstability(meter.getNormalizedMeter());
+			meter.SetMeter(slipMeter);
+			animatorLink.SetCarryWaterInstability(meter.GetNormalizedMeter());
 		}
 		else if (!gameOver)
 		{
-			Debug.Log("Game Over");
+			//Debug.Log("Game Over");
 			gameOver = true;
 			challengeHUD.SetActive(false);
 			lakeLink.SetActive(true);
@@ -74,7 +74,7 @@ public class IceBucketChallenge : MonoBehaviour
 	/// Probably best used for any meter that someone builds that could use a value like this so that it can fill in real time.
 	/// </summary>
 	/// <returns>slipMeter</returns>
-	public float getSlipMeter()
+	public float GetSlipMeter()
 	{
 		return slipMeter;
 	}
@@ -84,7 +84,7 @@ public class IceBucketChallenge : MonoBehaviour
 	/// Probably best used for any meter that someone builds that could use a value like this so that it can fill in real time.
 	/// </summary>
 	/// <returns>maxSlipMeter</returns>
-	public float getMaxSlipMeter()
+	public float GetMaxSlipMeter()
 	{
 		return maxSlipMeter;
 	}
