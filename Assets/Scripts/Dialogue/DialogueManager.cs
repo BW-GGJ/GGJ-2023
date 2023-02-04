@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    private static DialogueManager instance;
+    public static DialogueManager instance;
 
     private static List<DialogueData> DialogueDatas = new List<DialogueData>();
     [SerializeField] private float LetterSleep;
