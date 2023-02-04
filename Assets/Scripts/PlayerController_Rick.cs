@@ -12,6 +12,8 @@ public class PlayerController_Rick : MonoBehaviour
     float shovelTimer = 0.0f;
     float shovelTime = 0.6f;
 
+    [SerializeField] GameObject shovelHitPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +23,11 @@ public class PlayerController_Rick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (shovelingAllowed && Input.GetMouseButtonDown(0))
+        if (shovelingAllowed && Input.GetMouseButtonDown(0) && !shoveling)
         {
             GetComponent<BaseAnimator>().TriggerShovel();
+            Instantiate(shovelHitPrefab, transform.position + (Vector3.down * .5f), Quaternion.identity);
+            Debug.Log("Shoveling");
             shoveling = true;
             shovelTimer = 0.0f;
         }
