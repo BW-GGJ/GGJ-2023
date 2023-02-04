@@ -45,6 +45,7 @@ public class BaseAnimator : MonoBehaviour
     {
         thisAnimator.SetTrigger("CarryWater");
     }
+
     /// <summary>
     /// Meant for value ranges of 0 to 1, where >.99f triggers the end of the carrying animations
     /// </summary>
