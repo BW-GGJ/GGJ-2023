@@ -56,6 +56,8 @@ public class BaseAnimator : MonoBehaviour
     public void SetCarryWaterInstability(float instabilityLevel)
     {
         thisAnimator.SetFloat("instability", instabilityLevel);
+        gourdAnimator.SetFloat("instability", instabilityLevel);
+
         if(instabilityLevel > .99f) gourdAnimator.gameObject.SetActive(false);
     }
 }
