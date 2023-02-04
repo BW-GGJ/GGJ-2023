@@ -32,7 +32,7 @@ public class SingleTextTriggerNPC_Rick : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            DialogueManager.instance.SetActive(false);
+            //DialogueManager.instance.SetActive(false);
         }
     }
 }
