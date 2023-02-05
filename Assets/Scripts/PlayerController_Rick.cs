@@ -14,7 +14,7 @@ public class PlayerController_Rick : MonoBehaviour
 
     [SerializeField] GameObject shovelHitPrefab;
 
-    bool controllerDisabled = false;
+    [SerializeField] bool controllerDisabled = false;
 
     // Start is called before the first frame update
     void Start()

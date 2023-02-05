@@ -7,13 +7,14 @@ public class TimerActivate : MonoBehaviour
 	bool clock;
 	[SerializeField] GameObject timerLink;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (KetuEncounterController.isFinished && !clock)
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if(collision.gameObject.CompareTag("Player") && !clock)
 		{
 			clock = true;
 			timerLink.SetActive(true);
 		}
-    }
+	}
+
+	
 }
