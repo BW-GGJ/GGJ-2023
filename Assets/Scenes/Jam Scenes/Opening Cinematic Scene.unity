@@ -181,7 +181,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9850a14e57564d4448d98323d9e728f1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 27f2c50ff8765604c952e0f0328e6b0f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -317,8 +317,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelSprites:
-  - {fileID: 21300000, guid: d8fbf286be82f1f41a7418b500179adf, type: 3}
-  - {fileID: 21300000, guid: 9850a14e57564d4448d98323d9e728f1, type: 3}
+  - {fileID: 21300000, guid: 0f9cb6ca2a83b874ab3e6881658a45f3, type: 3}
+  - {fileID: 21300000, guid: 27f2c50ff8765604c952e0f0328e6b0f, type: 3}
   - {fileID: 21300000, guid: f225878fd5322cb4db448dab451b0bc4, type: 3}
   backdropSprite: {fileID: 222924271}
 --- !u!4 &541194591
