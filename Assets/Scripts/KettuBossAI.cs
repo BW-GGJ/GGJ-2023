@@ -19,7 +19,7 @@ public class KettuBossAI : MonoBehaviour
     [SerializeField] GameObject lilyRootPrefab;
     float lilyTimer = 6.0f;
 
-    [SerializeField] float lilyTime = 30.0f;
+    [SerializeField] float lilyTime = 15.0f;
 
     [SerializeField] List<CinematicDialogElements> brotherChats = new List<CinematicDialogElements>();
 
