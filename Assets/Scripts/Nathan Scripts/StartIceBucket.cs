@@ -15,6 +15,10 @@ public class StartIceBucket : MonoBehaviour
 	[SerializeField] GameObject challengeHud;
 	[SerializeField] GameObject brotherTriggerLink;
 	[SerializeField] BaseAnimator animatorLink;
+	[SerializeField] GameObject followTrigger;
+	[SerializeField] GameObject ignoreTrigger;
+
+	bool wasIgnored = false;
 
 
     // Start is called before the first frame update
@@ -45,7 +49,14 @@ public class StartIceBucket : MonoBehaviour
 				challengeHud.SetActive(true);
 				brotherTriggerLink.SetActive(true);
 				gameObject.SetActive(false);
+				if (wasIgnored) followTrigger.SetActive(true);
+				else ignoreTrigger.SetActive(true);
 			}
 		}
+	}
+
+	public void setIgnore(bool newIgnore)
+	{
+		wasIgnored = newIgnore;
 	}
 }
