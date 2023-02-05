@@ -19,7 +19,7 @@ public class KettuBossAI : MonoBehaviour
     [SerializeField] GameObject lilyRootPrefab;
     float lilyTimer = 6.0f;
 
-    [SerializeField] float lilyTime = 10.0f;
+    [SerializeField] float lilyTime = 8.0f;
 
     [SerializeField] List<CinematicDialogElements> brotherChats = new List<CinematicDialogElements>();
 
@@ -45,8 +45,8 @@ public class KettuBossAI : MonoBehaviour
         if(lilyTimer >= lilyTime)
         {
             lilyTimer = 0f;
-            float ranX = Random.Range(-13, 13);
-            float ranY = Random.Range(-10, 10);
+            float ranX = Random.Range(-10, 10);
+            float ranY = Random.Range(-8, 8);
 
             Instantiate(lilyRootPrefab, new Vector3(transform.position.x + ranX, transform.position.y + ranY, 10), Quaternion.identity);
 
@@ -73,6 +73,7 @@ public class KettuBossAI : MonoBehaviour
                 }
                 else
                 {
+                    if (AudioManager.instance) AudioManager.instance.PlayAmbiance();
                     Destroy(gameObject, 4f);
                     Instantiate(ascensionGemPrefab, new Vector3(transform.position.x, transform.position.y, 10), Quaternion.identity);
                 }

@@ -31,6 +31,9 @@ public class AscensionGem : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Pickup bonuses here
-        if (SceneChanger.instance) SceneChanger.instance.LoadEndingCinematicScene();
+        if (collision.tag == "Player")
+        {
+            if (SceneChanger.instance) SceneChanger.instance.LoadEndingCinematicScene();
+        }
     }
 }
