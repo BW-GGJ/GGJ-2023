@@ -13,6 +13,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioClip[] VocalBops;
     [SerializeField] AudioClip Pickup;
     [SerializeField] AudioClip Warn;
+    [SerializeField] AudioClip Ambiance;
 
     [Space(10)]
     [SerializeField] AudioSource musicChannel;

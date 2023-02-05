@@ -8,10 +8,8 @@ public class StickManager : MonoBehaviour
     public static void StickCollected() 
     {
         SticksCollected++;
+
+        //If the player has collected all of the logs
         if (SticksCollected == 5 && AudioManager.instance) AudioManager.instance.PlayWarn();
-    }
-    private void Update()
-    {
-        Debug.Log(SticksCollected);
     }
 }
