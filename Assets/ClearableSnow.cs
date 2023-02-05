@@ -12,6 +12,7 @@ public class ClearableSnow : MonoBehaviour
             GetComponent<Animator>().SetTrigger("ClearSnow");
             GetComponent<BoxCollider2D>().enabled = false;
             GetComponent<CircleCollider2D>().enabled = false;
+            GetComponent<SpriteRenderer>().sortingOrder = 1;
         }
     }
 }
