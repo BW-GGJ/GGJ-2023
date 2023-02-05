@@ -19,5 +19,6 @@ public class StartFight : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision)
     {
         talking = true;
+        CampfireHUD.instance.OverrideText("Survive.");
     }
 }

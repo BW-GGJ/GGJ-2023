@@ -18,7 +18,8 @@ public class KettuBossAI : MonoBehaviour
 
     [SerializeField] GameObject lilyRootPrefab;
     float lilyTimer = 6.0f;
-    float lilyTime = 13.0f;
+
+    [SerializeField] float lilyTime = 30.0f;
 
     [SerializeField] List<CinematicDialogElements> brotherChats = new List<CinematicDialogElements>();
 
@@ -38,11 +39,12 @@ public class KettuBossAI : MonoBehaviour
     void Update()
     {
         //if (Input.GetKeyDown(KeyCode.Space)) TakeHit();
+        if (!followTarget) return;
 
         lilyTimer += Time.deltaTime;
         if(lilyTimer >= lilyTime)
         {
-            lilyTimer -= lilyTime;
+            lilyTimer = 0f;
             float ranX = Random.Range(-13, 13);
             float ranY = Random.Range(-10, 10);
 

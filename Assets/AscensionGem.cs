@@ -16,11 +16,11 @@ public class AscensionGem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(timer < 4)
+        if (timer < 4)
         {
             timer += Time.deltaTime;
 
-            if(timer >= 4)
+            if (timer >= 4)
             {
                 GetComponent<SpriteRenderer>().enabled = true;
                 GetComponent<CircleCollider2D>().enabled = true;
@@ -31,6 +31,6 @@ public class AscensionGem : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // Pickup bonuses here
-
+        if (SceneChanger.instance) SceneChanger.instance.LoadEndingCinematicScene();
     }
 }

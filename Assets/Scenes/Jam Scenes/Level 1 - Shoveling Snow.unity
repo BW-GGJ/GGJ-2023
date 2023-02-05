@@ -1086,30 +1086,66 @@ MonoBehaviour:
   - text: W-w-what?  Who's there!!
     portrait: {fileID: 21300000, guid: 8681162fa7cd1cb43a87268a5ec30590, type: 3}
     duration: 3
+    Goto: {x: 0, y: 0}
+    toGo: {fileID: 0}
+    followKetu: 0
+    animateBrother: {fileID: 0}
   - text: Fear not, young one.  For I know your plight
     portrait: {fileID: 21300000, guid: c988df87d08dc814699fa0ae1beda1e7, type: 3}
     duration: 4
+    Goto: {x: 0, y: 0}
+    toGo: {fileID: 0}
+    followKetu: 0
+    animateBrother: {fileID: 0}
   - text: I can help you and your brother
     portrait: {fileID: 21300000, guid: c988df87d08dc814699fa0ae1beda1e7, type: 3}
     duration: 3
+    Goto: {x: 0, y: 0}
+    toGo: {fileID: 0}
+    followKetu: 0
+    animateBrother: {fileID: 0}
   - text: Y-you want to help us?  To help my brother?
     portrait: {fileID: 21300000, guid: 537d25c16328f694b9ffeb77eb3a336b, type: 3}
     duration: 4
+    Goto: {x: 0, y: 0}
+    toGo: {fileID: 0}
+    followKetu: 0
+    animateBrother: {fileID: 0}
   - text: 'Of course!  '
     portrait: {fileID: 21300000, guid: c988df87d08dc814699fa0ae1beda1e7, type: 3}
     duration: 2
+    Goto: {x: 0, y: 0}
+    toGo: {fileID: 0}
+    followKetu: 0
+    animateBrother: {fileID: 0}
   - text: Deep in the forest grows a root with special properties
     portrait: {fileID: 21300000, guid: c988df87d08dc814699fa0ae1beda1e7, type: 3}
     duration: 4
+    Goto: {x: 0, y: 0}
+    toGo: {fileID: 0}
+    followKetu: 0
+    animateBrother: {fileID: 0}
   - text: Buried in the snow here is a map to where it grows
     portrait: {fileID: 21300000, guid: c988df87d08dc814699fa0ae1beda1e7, type: 3}
     duration: 4
+    Goto: {x: 0, y: 0}
+    toGo: {fileID: 0}
+    followKetu: 0
+    animateBrother: {fileID: 0}
   - text: Find the map and then the root!
     portrait: {fileID: 21300000, guid: c988df87d08dc814699fa0ae1beda1e7, type: 3}
     duration: 3
-  - text: Thank you Ketu!
+    Goto: {x: 0, y: 0}
+    toGo: {fileID: 0}
+    followKetu: 0
+    animateBrother: {fileID: 0}
+  - text: Thank you Kettu!
     portrait: {fileID: 21300000, guid: a731b56d9032f7d43a315960218e3014, type: 3}
     duration: 2
+    Goto: {x: 0, y: 0}
+    toGo: {fileID: 0}
+    followKetu: 0
+    animateBrother: {fileID: 0}
 --- !u!4 &153867211
 Transform:
   m_ObjectHideFlags: 0
@@ -2523,9 +2559,17 @@ MonoBehaviour:
   - text: Wait!  We haven't found the map
     portrait: {fileID: 21300000, guid: 3f00d7935980cb7499bec12749b23161, type: 3}
     duration: 2
+    Goto: {x: 0, y: 0}
+    toGo: {fileID: 0}
+    followKetu: 0
+    animateBrother: {fileID: 0}
   - text: Let's make sure we find it.
     portrait: {fileID: 21300000, guid: 3f00d7935980cb7499bec12749b23161, type: 3}
     duration: 2
+    Goto: {x: 0, y: 0}
+    toGo: {fileID: 0}
+    followKetu: 0
+    animateBrother: {fileID: 0}
 --- !u!61 &426383531
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7217,9 +7261,17 @@ MonoBehaviour:
   - text: It's the map Kettu told us about!
     portrait: {fileID: 21300000, guid: 537d25c16328f694b9ffeb77eb3a336b, type: 3}
     duration: 2
+    Goto: {x: 0, y: 0}
+    toGo: {fileID: 0}
+    followKetu: 0
+    animateBrother: {fileID: 0}
   - text: It says to go South!
     portrait: {fileID: 21300000, guid: 3f00d7935980cb7499bec12749b23161, type: 3}
     duration: 2
+    Goto: {x: 0, y: 0}
+    toGo: {fileID: 0}
+    followKetu: 0
+    animateBrother: {fileID: 0}
   zoneExit: {fileID: 426383530}
 --- !u!1001 &1314639223
 PrefabInstance:
