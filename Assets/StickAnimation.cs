@@ -17,6 +17,7 @@ public class StickAnimation : MonoBehaviour
         if (collider.tag == "Fire") 
         {
             noWood();
+            if (AudioManager.instance) AudioManager.instance.PlayDropEffect();
         }
     }
 

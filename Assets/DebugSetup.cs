@@ -7,6 +7,7 @@ public class DebugSetup : MonoBehaviour
     void Start()
     {
         StartCoroutine(startfollow());
+        if (AudioManager.instance) AudioManager.instance.PlayAmbiance();
     }
     IEnumerator startfollow() 
     {

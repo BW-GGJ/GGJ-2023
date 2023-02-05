@@ -15,6 +15,8 @@ public class KetuEncounterController : MonoBehaviour
     float dialogTimer = 1.0f;
     bool dialogRunning = false;
 
+    public static bool isFinished;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +36,7 @@ public class KetuEncounterController : MonoBehaviour
                 if (disablesPlayer) playerController.EnableController();
                 ketu.BeginKetuDespawnSequence();
                 dialogRunning = false;
+                isFinished = true;
             }
             else
             {
@@ -55,6 +58,7 @@ public class KetuEncounterController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player" && !wasTriggered)
         {
+            isFinished = false;
             wasTriggered = true;
             ketu.BeginKetuSpawnSequence();
             if(disablesPlayer) playerController.DisableController();

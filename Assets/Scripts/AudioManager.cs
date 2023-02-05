@@ -14,6 +14,12 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioClip Pickup;
     [SerializeField] AudioClip Warn;
     [SerializeField] AudioClip Ambiance;
+    [SerializeField] AudioClip Drop;
+    [SerializeField] AudioClip Track1;
+    [SerializeField] AudioClip Track2;
+    [SerializeField] AudioClip Track3;
+    [SerializeField] AudioClip BossIntro;
+    [SerializeField] AudioClip BossFight;
 
     [Space(10)]
     [SerializeField] AudioSource musicChannel;
@@ -72,12 +78,38 @@ public class AudioManager : MonoBehaviour
     }
     public void PlayGameMusic()
     {
-            PlayMusic(gameMusic);
-
+        PlayMusic(gameMusic);
+    }
+    public void PlayAmbiance()
+    {
+        PlayMusic(Ambiance);
+    }
+    public void PlayTrack1()
+    {
+        PlayMusic(Track1);
+    }
+    public void PlayTrack2()
+    {
+        PlayMusic(Track2);
+    }
+    public void PlayTrack3()
+    {
+        PlayMusic(Track3);
+    }
+    public void PlayBoss() 
+    {
+        StartCoroutine(PlayBossFight());
+    }
+    IEnumerator PlayBossFight() 
+    {
+        PlayMusic(BossIntro);
+        yield return new WaitForSeconds(BossIntro.length);
+        PlayMusic(BossFight);
     }
     #endregion
 
     #region Sound Effects
+
     void PlaySoundEffect(AudioClip soundEffect)
     {
         if (soundEffect == null)
@@ -94,7 +126,10 @@ public class AudioManager : MonoBehaviour
             sfxChannels[currentSFXChannel].Play();
         }
     }
-
+    public void PlayDropEffect() 
+    {
+        PlaySoundEffect(Drop);
+    }
     public void PlayPickup() 
     {
         PlaySoundEffect(Pickup);
