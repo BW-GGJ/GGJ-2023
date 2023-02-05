@@ -73,6 +73,7 @@ public class KettuBossAI : MonoBehaviour
                 }
                 else
                 {
+                    if (AudioManager.instance) AudioManager.instance.PlayAmbiance();
                     Destroy(gameObject, 4f);
                     Instantiate(ascensionGemPrefab, new Vector3(transform.position.x, transform.position.y, 10), Quaternion.identity);
                 }
