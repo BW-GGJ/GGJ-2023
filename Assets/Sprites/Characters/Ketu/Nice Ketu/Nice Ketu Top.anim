@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Big Flame
+  m_Name: Nice Ketu Top
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,17 +20,17 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -1346311948, guid: 579310423207e8b489a65a6ec71159de, type: 3}
+      value: {fileID: 260681985, guid: 342165f3671b4c147b6ec0d6374c33bc, type: 3}
     - time: 0.083333336
-      value: {fileID: -497052402, guid: 579310423207e8b489a65a6ec71159de, type: 3}
+      value: {fileID: 30447298, guid: 342165f3671b4c147b6ec0d6374c33bc, type: 3}
     - time: 0.16666667
-      value: {fileID: 378778252, guid: 579310423207e8b489a65a6ec71159de, type: 3}
+      value: {fileID: 452474482, guid: 342165f3671b4c147b6ec0d6374c33bc, type: 3}
     - time: 0.25
-      value: {fileID: -1489551282, guid: 579310423207e8b489a65a6ec71159de, type: 3}
+      value: {fileID: 611710102, guid: 342165f3671b4c147b6ec0d6374c33bc, type: 3}
     - time: 0.33333334
-      value: {fileID: 868139868, guid: 579310423207e8b489a65a6ec71159de, type: 3}
+      value: {fileID: 1182180728, guid: 342165f3671b4c147b6ec0d6374c33bc, type: 3}
     - time: 0.41666666
-      value: {fileID: 121132277, guid: 579310423207e8b489a65a6ec71159de, type: 3}
+      value: {fileID: 1326422118, guid: 342165f3671b4c147b6ec0d6374c33bc, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -50,12 +50,12 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -1346311948, guid: 579310423207e8b489a65a6ec71159de, type: 3}
-    - {fileID: -497052402, guid: 579310423207e8b489a65a6ec71159de, type: 3}
-    - {fileID: 378778252, guid: 579310423207e8b489a65a6ec71159de, type: 3}
-    - {fileID: -1489551282, guid: 579310423207e8b489a65a6ec71159de, type: 3}
-    - {fileID: 868139868, guid: 579310423207e8b489a65a6ec71159de, type: 3}
-    - {fileID: 121132277, guid: 579310423207e8b489a65a6ec71159de, type: 3}
+    - {fileID: 260681985, guid: 342165f3671b4c147b6ec0d6374c33bc, type: 3}
+    - {fileID: 30447298, guid: 342165f3671b4c147b6ec0d6374c33bc, type: 3}
+    - {fileID: 452474482, guid: 342165f3671b4c147b6ec0d6374c33bc, type: 3}
+    - {fileID: 611710102, guid: 342165f3671b4c147b6ec0d6374c33bc, type: 3}
+    - {fileID: 1182180728, guid: 342165f3671b4c147b6ec0d6374c33bc, type: 3}
+    - {fileID: 1326422118, guid: 342165f3671b4c147b6ec0d6374c33bc, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
