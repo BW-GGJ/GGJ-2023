@@ -24,18 +24,15 @@ public class IceBucketTurnin : MonoBehaviour
 	/// <param name="collision">the object that is colliding with this trigger.</param>
 	private void OnTriggerStay2D(Collider2D collision)
 	{
-		if (collision.gameObject.CompareTag("Player"))
+		if (collision.gameObject.CompareTag("Player") && !triggered)
 		{
-			if (Input.GetAxis("Submit") > 0 || Input.GetAxis("Fire1") > 0 && !triggered)
-			{
-				//Debug.Log("WIN");
-				//Debug.Log("Normal Animation");
-				animatorLink.SetCarryWaterInstability(1);
-				challengeHud.SetActive(false);
-				gameObject.SetActive(false);
-				triggered = true;
-				ending.SetActive(true);
-			}
+			//Debug.Log("WIN");
+			//Debug.Log("Normal Animation");
+			animatorLink.SetCarryWaterInstability(1);
+			challengeHud.SetActive(false);
+			gameObject.SetActive(false);
+			triggered = true;
+			ending.SetActive(true);
 		}
 	}
 }

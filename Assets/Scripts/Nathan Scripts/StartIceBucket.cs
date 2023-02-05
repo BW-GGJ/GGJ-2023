@@ -17,6 +17,7 @@ public class StartIceBucket : MonoBehaviour
 	[SerializeField] BaseAnimator animatorLink;
 	[SerializeField] GameObject followTrigger;
 	[SerializeField] GameObject ignoreTrigger;
+	[SerializeField] GameObject oldTrigger;
 
 	bool wasIgnored = false;
 
@@ -41,18 +42,16 @@ public class StartIceBucket : MonoBehaviour
 	{
 		if (collision.gameObject.CompareTag("Player"))
 		{
-			if (Input.GetAxis("Submit") > 0 || Input.GetAxis("Fire1") > 0)
-			{
-				//Debug.Log("Start");
-				//Debug.Log("Bucket Animation");
-				animatorLink.TriggerCarryWater();
-				animatorLink.SetCarryWaterInstability(0);
-				challengeHud.SetActive(true);
-				brotherTriggerLink.SetActive(true);
-				gameObject.SetActive(false);
-				if (wasIgnored) followTrigger.SetActive(true);
-				else ignoreTrigger.SetActive(true);
-			}
+			//Debug.Log("Start");
+			//Debug.Log("Bucket Animation");
+			animatorLink.TriggerCarryWater();
+			animatorLink.SetCarryWaterInstability(0);
+			challengeHud.SetActive(true);
+			brotherTriggerLink.SetActive(true);
+			gameObject.SetActive(false);
+			oldTrigger.SetActive(false);
+			if (wasIgnored) followTrigger.SetActive(true);
+			else ignoreTrigger.SetActive(true);
 		}
 	}
 

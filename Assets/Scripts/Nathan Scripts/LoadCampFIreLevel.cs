@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class LoadCampFIreLevel : MonoBehaviour
 {
-
+	bool activated;
 
     // Start is called before the first frame update
-    void Start()
+    void Update()
     {
-		StartCoroutine(wait());
+		if (!activated)
+		{
+			StartCoroutine(wait());
+			activated = true;
+		}
     }
 
 	IEnumerator wait()
