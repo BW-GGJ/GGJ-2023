@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OpeningCinematicManager : MonoBehaviour
 {
-    float loadNextLevelTimer = 13.0f;
+    float loadNextLevelTimer = 18.0f;
     bool loadedNextLevel = false;
 
     [SerializeField] List<Sprite> panelSprites = new List<Sprite>();
@@ -15,7 +15,7 @@ public class OpeningCinematicManager : MonoBehaviour
     bool secondPanelTriggered = false;
     float thirdPanelTime = 8.0f;
     bool thirdPanelTriggered = false;
-    float fourthPanelTime = 5.0f;
+    float fourthPanelTime = 14.0f;
     bool fourthPanelTriggered = false;
 
     float panelTimer = 0.0f;
@@ -36,7 +36,7 @@ public class OpeningCinematicManager : MonoBehaviour
     {
 
         panelTimer += Time.deltaTime;
-        if (panelTimer > thirdPanelTime && !fourthPanelTriggered)
+        if (panelTimer > fourthPanelTime && !fourthPanelTriggered)
         {
             fourthPanelTriggered = true;
             DialogueManager.AddDialogue("But- my brother!", null);
