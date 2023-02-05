@@ -322,6 +322,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 37bb318317e351949a9f490a27abd525, type: 3}
   - {fileID: 21300000, guid: ec6709c4256104142bcc1fbd7c740f24, type: 3}
   backdropSprite: {fileID: 222924271}
+  sisterSpriteSurprised: {fileID: 21300000, guid: 537d25c16328f694b9ffeb77eb3a336b, type: 3}
+  sisterSpriteAnnoyed: {fileID: 21300000, guid: 496da011ee540e0438610034c4f8522b, type: 3}
+  guardSprite: {fileID: 21300000, guid: d32ed8287b1bb714089e74fc85992fbd, type: 3}
 --- !u!4 &541194591
 Transform:
   m_ObjectHideFlags: 0
