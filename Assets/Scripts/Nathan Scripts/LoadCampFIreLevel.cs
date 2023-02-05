@@ -18,7 +18,7 @@ public class LoadCampFIreLevel : MonoBehaviour
 
 	IEnumerator wait()
 	{
-		yield return new WaitForSeconds(15);
+		yield return new WaitForSeconds(13.5f);
 
 		SceneChanger.instance.LoadCampfireScene();
 	}

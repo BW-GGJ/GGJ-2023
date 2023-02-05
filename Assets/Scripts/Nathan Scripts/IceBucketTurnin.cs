@@ -17,6 +17,7 @@ public class IceBucketTurnin : MonoBehaviour
 	[SerializeField] BaseAnimator animatorLink;
 	bool triggered = false;
 	[SerializeField] GameObject ending;
+	[SerializeField] GameObject timer;
 
 	/// <summary>
 	/// An OnTriggerStay that checks if the player is within the trigger. If they are, they can use the Submit button to complete the challenge
@@ -33,6 +34,7 @@ public class IceBucketTurnin : MonoBehaviour
 			gameObject.SetActive(false);
 			triggered = true;
 			ending.SetActive(true);
+			timer.SetActive(false);
 		}
 	}
 }

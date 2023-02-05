@@ -22,7 +22,6 @@ public class IceBucketChallenge : MonoBehaviour
 	[SerializeField] float slipMeterGain = 0.01f;
 	[Tooltip("This is the amount the meter decreases per frame")]
 	[SerializeField] float slipMeterDown = 0.02f;
-	bool gameOver = false;
 
 	[Tooltip("The object currently holding the MeterController script that this script interacts with")]
 	[SerializeField] MeterController_Nathan meter;
@@ -38,7 +37,6 @@ public class IceBucketChallenge : MonoBehaviour
     void Start()
     {
 		meter.SetMaxValue(maxSlipMeter);
-		gameOver = false;
 		slipMeter = 0;
     }
 
