@@ -5368,6 +5368,10 @@ PrefabInstance:
       value: Brother
       objectReference: {fileID: 0}
     - target: {fileID: 739995533530869959, guid: 4892c856df98cfc4f988c37f0943d67f, type: 3}
+      propertyPath: layingDown
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 739995533530869959, guid: 4892c856df98cfc4f988c37f0943d67f, type: 3}
       propertyPath: followTarget
       value: 
       objectReference: {fileID: 1340023233}
