@@ -237,7 +237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7815099960187478451, guid: a361f57ce01ef644b8837673d3305117, type: 3}
       propertyPath: chatText
-      value: Why would you steal the root?  Ketu is displeased.
+      value: Why would you steal the root?  Kettu is displeased.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a361f57ce01ef644b8837673d3305117, type: 3}
@@ -3421,7 +3421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7815099960187478451, guid: a361f57ce01ef644b8837673d3305117, type: 3}
       propertyPath: chatText
-      value: Sorry to see you exiled.  You knew the roles though.
+      value: Sorry to see you exiled.  You knew the rules though.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a361f57ce01ef644b8837673d3305117, type: 3}
@@ -3995,18 +3995,38 @@ MonoBehaviour:
   - text: You have violated our laws!
     portrait: {fileID: 1969469236, guid: d0cf8fd2e8c21b045b5091c2ad708a8c, type: 3}
     duration: 3
+    Goto: {x: 0, y: 0}
+    toGo: {fileID: 0}
+    followKetu: 0
+    animateBrother: {fileID: 0}
   - text: You are henceforce banished from this village
     portrait: {fileID: 1969469236, guid: d0cf8fd2e8c21b045b5091c2ad708a8c, type: 3}
     duration: 4
+    Goto: {x: 0, y: 0}
+    toGo: {fileID: 0}
+    followKetu: 0
+    animateBrother: {fileID: 0}
   - text: But we'll die out there!  My brother is sick!
     portrait: {fileID: 21300000, guid: 496da011ee540e0438610034c4f8522b, type: 3}
     duration: 4
+    Goto: {x: 0, y: 0}
+    toGo: {fileID: 0}
+    followKetu: 0
+    animateBrother: {fileID: 0}
   - text: Not our problem
     portrait: {fileID: 1969469236, guid: d0cf8fd2e8c21b045b5091c2ad708a8c, type: 3}
     duration: 3
+    Goto: {x: 0, y: 0}
+    toGo: {fileID: 0}
+    followKetu: 0
+    animateBrother: {fileID: 0}
   - text: Bye
     portrait: {fileID: 1969469236, guid: d0cf8fd2e8c21b045b5091c2ad708a8c, type: 3}
     duration: 2
+    Goto: {x: 0, y: 0}
+    toGo: {fileID: 0}
+    followKetu: 0
+    animateBrother: {fileID: 0}
   dialogOnStart: 1
   pausePlayer: 1
 --- !u!4 &1858148176

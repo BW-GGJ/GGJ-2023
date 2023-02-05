@@ -68,4 +68,8 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("Test Boss Arena");
     }
+    public void LoadEndingCinematicScene()
+    {
+        SceneManager.LoadScene("Ending Cinematic Scene");
+    }
 }

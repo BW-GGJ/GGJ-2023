@@ -19,7 +19,11 @@ public class JamGameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+<<<<<<< Updated upstream
         SceneChanger.instance.LoadMenuScene();
+=======
+        //SceneChanger.instance.LoadEndingCinematicScene();
+>>>>>>> Stashed changes
         
     }
 }
