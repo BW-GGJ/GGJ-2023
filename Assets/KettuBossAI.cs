@@ -17,13 +17,15 @@ public class KettuBossAI : MonoBehaviour
     float beingHitTimer = 0.0f;
 
     [SerializeField] GameObject lilyRootPrefab;
-    float lilyTimer = 0.0f;
-    float lilyTime = 17.0f;
+    float lilyTimer = 6.0f;
+    float lilyTime = 13.0f;
 
     [SerializeField] List<CinematicDialogElements> brotherChats = new List<CinematicDialogElements>();
 
     float oldX = 0f;
     float deltaX = 0f;
+
+    [SerializeField] GameObject ascensionGemPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -41,10 +43,10 @@ public class KettuBossAI : MonoBehaviour
         if(lilyTimer >= lilyTime)
         {
             lilyTimer -= lilyTime;
-            float ranX = Random.Range(-19, 19);
-            float ranY = Random.Range(-12, 12);
+            float ranX = Random.Range(-13, 13);
+            float ranY = Random.Range(-10, 10);
 
-            Instantiate(lilyRootPrefab, new Vector3(followTarget.transform.position.x + ranX, followTarget.transform.position.y + ranY, 0), Quaternion.identity);
+            Instantiate(lilyRootPrefab, new Vector3(transform.position.x + ranX, transform.position.y + ranY, 0), Quaternion.identity);
 
         }
     }
@@ -67,7 +69,11 @@ public class KettuBossAI : MonoBehaviour
                 {
                     Destroy(secondEnsnareRoot);
                 }
-                else Destroy(gameObject, 4f);
+                else
+                {
+                    Destroy(gameObject, 4f);
+                    Instantiate(ascensionGemPrefab, new Vector3(followTarget.transform.position.x, followTarget.transform.position.y, 0), Quaternion.identity);
+                }
             }
         }
         else if(hitsLeft >= 0) transform.position = Vector3.MoveTowards(transform.position, followTarget.transform.position, moveSpeed * Time.fixedDeltaTime);
