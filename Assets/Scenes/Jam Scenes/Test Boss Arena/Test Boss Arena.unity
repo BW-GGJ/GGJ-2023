@@ -1045,6 +1045,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4913451909934141487, guid: 46b75924844609143bea67f37ba7c3e3, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913451909934141487, guid: 46b75924844609143bea67f37ba7c3e3, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4913451909934141487, guid: 46b75924844609143bea67f37ba7c3e3, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4913451910595774882, guid: 46b75924844609143bea67f37ba7c3e3, type: 3}
       propertyPath: followTarget
       value: 
@@ -1101,5 +1113,66 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kettu Boss
       objectReference: {fileID: 0}
+    - target: {fileID: 4913451910595774885, guid: 46b75924844609143bea67f37ba7c3e3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46b75924844609143bea67f37ba7c3e3, type: 3}
+--- !u!1001 &6367574507043018356
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8336142276092008698, guid: 0b13b52fc7f267143a116aece6ce3b49, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336142276092008698, guid: 0b13b52fc7f267143a116aece6ce3b49, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336142276092008698, guid: 0b13b52fc7f267143a116aece6ce3b49, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336142276092008698, guid: 0b13b52fc7f267143a116aece6ce3b49, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336142276092008698, guid: 0b13b52fc7f267143a116aece6ce3b49, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336142276092008698, guid: 0b13b52fc7f267143a116aece6ce3b49, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336142276092008698, guid: 0b13b52fc7f267143a116aece6ce3b49, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336142276092008698, guid: 0b13b52fc7f267143a116aece6ce3b49, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336142276092008698, guid: 0b13b52fc7f267143a116aece6ce3b49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336142276092008698, guid: 0b13b52fc7f267143a116aece6ce3b49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336142276092008698, guid: 0b13b52fc7f267143a116aece6ce3b49, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336142276092008700, guid: 0b13b52fc7f267143a116aece6ce3b49, type: 3}
+      propertyPath: m_Name
+      value: Kettu Shadow
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b13b52fc7f267143a116aece6ce3b49, type: 3}

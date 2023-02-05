@@ -18,6 +18,10 @@ public class IceBucketChallenge : MonoBehaviour
 	[SerializeField] float slipMeter = 0f;
 	[Tooltip("The maximum value of the slip meter")]
 	[SerializeField] float maxSlipMeter = 10f;
+	[Tooltip("This is the amount the meter increases per frame")]
+	[SerializeField] float slipMeterGain = 0.01f;
+	[Tooltip("This is the amount the meter decreases per frame")]
+	[SerializeField] float slipMeterDown = 0.02f;
 	bool gameOver = false;
 
 	[Tooltip("The object currently holding the MeterController script that this script interacts with")]
@@ -34,6 +38,8 @@ public class IceBucketChallenge : MonoBehaviour
     void Start()
     {
 		meter.SetMaxValue(maxSlipMeter);
+		gameOver = false;
+		slipMeter = 0;
     }
 
     // Update is called once per frame
@@ -45,23 +51,23 @@ public class IceBucketChallenge : MonoBehaviour
 			//Will likely changes as the script developes
 			if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) 
 			{
-				slipMeter += .01f;
+				slipMeter += slipMeterGain;
 			}
 			else if (slipMeter > 0)
 			{
-				slipMeter -= .01f;
+				slipMeter -= slipMeterDown;
 				if (slipMeter < 0)
 					slipMeter = 0;
 			}
 			meter.SetMeter(slipMeter);
 			animatorLink.SetCarryWaterInstability(meter.GetNormalizedMeter());
 		}
-		else if (!gameOver)
+		else
 		{
 			//Debug.Log("Game Over");
-			gameOver = true;
 			challengeHUD.SetActive(false);
 			lakeLink.SetActive(true);
+			slipMeter = 0;
 		}
 			
 		//A proper game over scene will likely be called here
