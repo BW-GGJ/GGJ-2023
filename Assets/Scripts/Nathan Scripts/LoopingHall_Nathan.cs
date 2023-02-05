@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class LoopingHall_Nathan : MonoBehaviour
 {
-	int pass = 0; 
+	int pass = 1;
+	[SerializeField] GameObject triggerLink;
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
@@ -14,6 +15,7 @@ public class LoopingHall_Nathan : MonoBehaviour
 			{
 				collision.gameObject.transform.position = new Vector3(47, 16, 0);
 				pass++;
+				if (pass == 3) triggerLink.SetActive(true);
 			}
 			else
 			{
