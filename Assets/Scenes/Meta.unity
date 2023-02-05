@@ -686,6 +686,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7051972c1431630438e112d4d24c2fb2, type: 3}
   Pickup: {fileID: 8300000, guid: 5d56b453d1b500a48ac8fff61a5857d5, type: 3}
   Warn: {fileID: 8300000, guid: b4a325d89fec24d47b79460f8915b54c, type: 3}
+  Ambiance: {fileID: 0}
   musicChannel: {fileID: 310446829}
   sfxChannels:
   - {fileID: 876698275}

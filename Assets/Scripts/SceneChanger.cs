@@ -64,4 +64,8 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene(openingCinematicScene);
     }
+    public void LoadTestBossArena()
+    {
+        SceneManager.LoadScene("Test Boss Arena");
+    }
 }

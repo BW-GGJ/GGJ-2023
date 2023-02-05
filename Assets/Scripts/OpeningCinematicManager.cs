@@ -15,13 +15,15 @@ public class OpeningCinematicManager : MonoBehaviour
     bool secondPanelTriggered = false;
     float thirdPanelTime = 8.0f;
     bool thirdPanelTriggered = false;
+    float fourthPanelTime = 5.0f;
+    bool fourthPanelTriggered = false;
 
     float panelTimer = 0.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        DialogueManager.AddDialogue("Hey!", null);
+        DialogueManager.AddDialogue("These are those roots...", null);
         backdropSprite.sprite = panelSprites[0];
         panelTimer = 0.0f;
 
@@ -34,15 +36,20 @@ public class OpeningCinematicManager : MonoBehaviour
     {
 
         panelTimer += Time.deltaTime;
-        if(panelTimer > thirdPanelTime && !thirdPanelTriggered)
+        if (panelTimer > thirdPanelTime && !fourthPanelTriggered)
+        {
+            fourthPanelTriggered = true;
+            DialogueManager.AddDialogue("But- my brother!", null);
+            backdropSprite.sprite = panelSprites[3];
+        } else if (panelTimer > thirdPanelTime && !thirdPanelTriggered)
         {
             thirdPanelTriggered = true;
-            DialogueManager.AddDialogue("But- my brother!", null);
+            DialogueManager.AddDialogue("You know what happens when you break the law!", null);
             backdropSprite.sprite = panelSprites[2];
         } else if(panelTimer > secondPanelTime && !secondPanelTriggered)
         {
             secondPanelTriggered = true;
-            DialogueManager.AddDialogue("You know what happens when you break the law!", null);
+            DialogueManager.AddDialogue("Hey!", null);
             backdropSprite.sprite = panelSprites[1];
         }
 
