@@ -22,8 +22,8 @@ public class KetuController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) BeginKetuSpawnSequence();
-        if (Input.GetKeyDown(KeyCode.Backspace)) BeginKetuDespawnSequence();
+        //if (Input.GetKeyDown(KeyCode.Space)) BeginKetuSpawnSequence();
+        //if (Input.GetKeyDown(KeyCode.Backspace)) BeginKetuDespawnSequence();
 
         if (spawning)
         {
