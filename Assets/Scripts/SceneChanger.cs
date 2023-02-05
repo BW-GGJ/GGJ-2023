@@ -33,7 +33,7 @@ public class SceneChanger : MonoBehaviour
     }
     public void LoadCreditsScene()
     {
-        SceneManager.LoadScene(creditsSceneName);
+        StartCoroutine(Credits());
     }
     public void LoadGameScene()
     {
@@ -70,6 +70,22 @@ public class SceneChanger : MonoBehaviour
     }
     public void LoadEndingCinematicScene()
     {
+        StartCoroutine(EndGame());
+    }
+    IEnumerator EndGame()
+    {
+        FaderScript.instance.FadeIn();
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("Ending Cinematic Scene");
+        yield return new WaitForSeconds(1f);
+        FaderScript.instance.FadeOut(0.5f);
+    }
+    IEnumerator Credits()
+    {
+        FaderScript.instance.FadeIn(1f);
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(creditsSceneName);
+        yield return new WaitForSeconds(1f);
+        FaderScript.instance.FadeOut(0.5f);
     }
 }
