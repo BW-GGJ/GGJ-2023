@@ -38,6 +38,8 @@ public class IceBucketChallenge : MonoBehaviour
     void Start()
     {
 		meter.SetMaxValue(maxSlipMeter);
+		gameOver = false;
+		slipMeter = 0;
     }
 
     // Update is called once per frame
@@ -60,12 +62,12 @@ public class IceBucketChallenge : MonoBehaviour
 			meter.SetMeter(slipMeter);
 			animatorLink.SetCarryWaterInstability(meter.GetNormalizedMeter());
 		}
-		else if (!gameOver)
+		else
 		{
 			//Debug.Log("Game Over");
-			gameOver = true;
 			challengeHUD.SetActive(false);
 			lakeLink.SetActive(true);
+			slipMeter = 0;
 		}
 			
 		//A proper game over scene will likely be called here

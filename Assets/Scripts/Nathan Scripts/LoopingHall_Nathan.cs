@@ -11,11 +11,11 @@ public class LoopingHall_Nathan : MonoBehaviour
 	{
 		if (collision.gameObject.CompareTag("Player"))
 		{
-			if (pass < 5)
+			if (pass < 6)
 			{
 				collision.gameObject.transform.position = new Vector3(47, 16, 0);
 				pass++;
-				if (pass == 3) triggerLink.SetActive(true);
+				if (pass == 5) triggerLink.SetActive(true);
 			}
 			else
 			{

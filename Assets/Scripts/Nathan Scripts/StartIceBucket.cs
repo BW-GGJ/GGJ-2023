@@ -46,6 +46,7 @@ public class StartIceBucket : MonoBehaviour
 				//Debug.Log("Start");
 				//Debug.Log("Bucket Animation");
 				animatorLink.TriggerCarryWater();
+				animatorLink.SetCarryWaterInstability(0);
 				challengeHud.SetActive(true);
 				brotherTriggerLink.SetActive(true);
 				gameObject.SetActive(false);
