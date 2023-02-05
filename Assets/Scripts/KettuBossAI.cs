@@ -19,7 +19,7 @@ public class KettuBossAI : MonoBehaviour
     [SerializeField] GameObject lilyRootPrefab;
     float lilyTimer = 6.0f;
 
-    [SerializeField] float lilyTime = 15.0f;
+    [SerializeField] float lilyTime = 10.0f;
 
     [SerializeField] List<CinematicDialogElements> brotherChats = new List<CinematicDialogElements>();
 
@@ -74,7 +74,7 @@ public class KettuBossAI : MonoBehaviour
                 else
                 {
                     Destroy(gameObject, 4f);
-                    Instantiate(ascensionGemPrefab, new Vector3(followTarget.transform.position.x, followTarget.transform.position.y, 10), Quaternion.identity);
+                    Instantiate(ascensionGemPrefab, new Vector3(transform.position.x, transform.position.y, 10), Quaternion.identity);
                 }
             }
         }
