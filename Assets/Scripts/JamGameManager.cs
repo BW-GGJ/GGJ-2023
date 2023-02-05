@@ -20,6 +20,5 @@ public class JamGameManager : MonoBehaviour
     void Start()
     {
         SceneChanger.instance.LoadMenuScene();
-        
     }
 }
