@@ -1,0 +1,79 @@
+Scene Open
+Brother is lying down, not looking well after the long day of travel
+B: *cough cough*
+S: Polka! Hang in there.
+B: ... water...
+S: You want... But where can we find water here.
+Ketu appears
+K: Kekekekeke
+K: Did you truely miss the lake you passed by not so long ago?
+S: Huh?
+K: You better hurry. Don't want to leave your brother in this cold to long. Who knows what will happen. Kekeke
+Transition into Gameplay
+Timer on Screen
+Tytar has to navigate through the forest to find where the pond is
+
+Trigger Zone 1
+In the middle of a crossroad where player can turn left or right
+K: I suggest you turn left
+
+Trigger Zone 2
+If the player follows Ketu directions
+K: Kekeke. Didn't I tell you to left? Oh wait... Should of specified my left. You mortals do tend to be rather selfish in that regard.
+
+Trigger Zone 3
+If the player ignore Ketu entires and heads West instead
+K: Hmm... I think might of misunderstood what I meant by head left.
+
+Trigger Zone 4
+If the player manages to reach the north exit of the map
+K: I think you've gone a little to far from where you need to go
+
+Time 1
+At 75% time remaining
+K: Is it me or is it getting colder here? Something about this chill just cuts right through the bones. Kekeke.
+
+Time 2
+At 50% time remaining
+K: It's dangerous to get lost in these woods. I've seen many like you wander into here alone to never be seen from again.
+
+Time 3
+At 25% time remaining
+K: You better hurry. Not quite sure your brother will be able to make it in this weather. 
+K: Neither are you at this rate. 
+
+Ketu will leave the player alone after this until they find the lake.
+
+When the players uses action to get the bucket of water
+K: Oh you found the lake. Best be patient on your way back. Freezing water could be a death sentence in this cold. Kekeke
+
+When the player reaches 50% on slipMeter
+K: Uh oh. Do you need a hand with that? Though your a big girl. I'm sure you'll manage.
+
+When the player drops the bucket
+K: A chilling experience I'm sure. Though is it one you have the time to learn from.
+
+Trigger Zone 5
+On the way back
+"Did you know that the freezing temperature of blood is only slightly below the freezing temperature of water? Just figured you would like to know that."
+
+
+Trigger Zone 6 (Will have two spawns)
+Right before the crossroad
+IF player doesn't have a bucket
+K: Aren't you forgetting something. Visiting your brother isn't going to magically give you more time you know.
+If the player does
+K: Oh I think I saw a bear up ahead. Best be careful. Don't want to end up in the stomach of such a hungry creature.
+
+Trigger Zone 7
+At the crossroad
+K: Though come to think of it. Isn't that the direction your brother's in?
+
+Trigger Zone 8
+On the path towards brother
+K: Hmm... Or was it an elk.
+
+Trigger Zone 9
+At the clearing with the brother
+K: Oh look there's your brother. Suppose it was an elk after all.
+

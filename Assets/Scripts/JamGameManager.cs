@@ -15,6 +15,7 @@ public class JamGameManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
     }
+
     // Start is called before the first frame update
     void Start()
     {

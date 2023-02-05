@@ -1088,7 +1088,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2122815123}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
-        m_MethodName: LoadCarryWaterScene
+        m_MethodName: LoadOpeningCinematicScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

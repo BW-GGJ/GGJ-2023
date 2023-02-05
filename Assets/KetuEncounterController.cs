@@ -5,6 +5,7 @@ using UnityEngine;
 public class KetuEncounterController : MonoBehaviour
 {
     bool wasTriggered = false;
+    [SerializeField] bool disablesPlayer = true;
 
     [SerializeField] KetuController ketu;
     [SerializeField] PlayerController_Rick playerController;
@@ -30,7 +31,7 @@ public class KetuEncounterController : MonoBehaviour
         {
             if (dialogCount >= cinematicDialogElements.Count)
             {
-                playerController.EnableController();
+                if (disablesPlayer) playerController.EnableController();
                 ketu.BeginKetuDespawnSequence();
                 dialogRunning = false;
             }
@@ -56,7 +57,7 @@ public class KetuEncounterController : MonoBehaviour
         {
             wasTriggered = true;
             ketu.BeginKetuSpawnSequence();
-            playerController.DisableController();
+            if(disablesPlayer) playerController.DisableController();
             dialogRunning = true;
         }
     }

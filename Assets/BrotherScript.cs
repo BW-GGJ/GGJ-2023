@@ -11,13 +11,13 @@ public class BrotherScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (layingDown) GetComponent<Animator>().SetBool("laying", true);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(Vector3.Distance(transform.position,followTarget.transform.position) > 1)
+        if(Vector3.Distance(transform.position,followTarget.transform.position) > 1 && !layingDown)
         {
             transform.position = Vector3.MoveTowards(transform.position, followTarget.transform.position, 4.0f * Time.deltaTime);
         }
