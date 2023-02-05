@@ -7,24 +7,22 @@ public class KetuEncounterController : MonoBehaviour
     bool wasTriggered = false;
     [SerializeField] bool disablesPlayer = true;
 
-    [SerializeField] KetuController ketu;
-    [SerializeField] PlayerController_Rick playerController;
-    [SerializeField] List<CinematicDialogElements> cinematicDialogElements = new List<CinematicDialogElements>();
+    [SerializeField] protected KetuController ketu;
+    [SerializeField] protected PlayerController_Rick playerController;
+    [SerializeField] protected List<CinematicDialogElements> cinematicDialogElements = new List<CinematicDialogElements>();
 
-    int dialogCount = 0;
+    protected int dialogCount = 0;
     float dialogTimer = 1.0f;
     bool dialogRunning = false;
 
     public static bool isFinished;
 
-    // Start is called before the first frame update
-    void Start()
+    public virtual void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public virtual void Update()
     {
         if (!dialogRunning) return;
 
@@ -45,16 +43,16 @@ public class KetuEncounterController : MonoBehaviour
         }
     }
 
-    void NextDialogElement()
+    public virtual void NextDialogElement()
     {
         dialogTimer = cinematicDialogElements[dialogCount].duration;
         DialogueManager.AddDialogue(cinematicDialogElements[dialogCount].text, cinematicDialogElements[dialogCount].portrait);
         dialogCount++;
     }
 
-    
 
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    public virtual void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player" && !wasTriggered)
         {

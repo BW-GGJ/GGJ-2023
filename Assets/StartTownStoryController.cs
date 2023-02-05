@@ -64,4 +64,13 @@ public class CinematicDialogElements
     public string text = "";
     public Sprite portrait = null;
     public float duration = 0;
+
+
+    //Advanced stuff
+    public Vector2 Goto;
+    public GameObject toGo;
+
+    public bool followKetu;
+
+    public BrotherDeath animateBrother;
 }

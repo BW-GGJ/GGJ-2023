@@ -46,7 +46,7 @@ public class KettuBossAI : MonoBehaviour
             float ranX = Random.Range(-13, 13);
             float ranY = Random.Range(-10, 10);
 
-            Instantiate(lilyRootPrefab, new Vector3(transform.position.x + ranX, transform.position.y + ranY, 0), Quaternion.identity);
+            Instantiate(lilyRootPrefab, new Vector3(transform.position.x + ranX, transform.position.y + ranY, 10), Quaternion.identity);
 
         }
     }
@@ -72,7 +72,7 @@ public class KettuBossAI : MonoBehaviour
                 else
                 {
                     Destroy(gameObject, 4f);
-                    Instantiate(ascensionGemPrefab, new Vector3(followTarget.transform.position.x, followTarget.transform.position.y, 0), Quaternion.identity);
+                    Instantiate(ascensionGemPrefab, new Vector3(followTarget.transform.position.x, followTarget.transform.position.y, 10), Quaternion.identity);
                 }
             }
         }
