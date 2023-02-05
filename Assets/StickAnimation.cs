@@ -14,7 +14,7 @@ public class StickAnimation : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.tag == "Fire") 
+        if (collider.tag == "Fire" && woodState) 
         {
             noWood();
             if (AudioManager.instance) AudioManager.instance.PlayDropEffect();
