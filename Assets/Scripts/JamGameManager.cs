@@ -19,7 +19,7 @@ public class JamGameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SceneChanger.instance.LoadCampfireScene();
+        SceneChanger.instance.LoadTestBossArena();
         
     }
 }
