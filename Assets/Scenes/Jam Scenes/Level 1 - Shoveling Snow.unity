@@ -1058,6 +1058,7 @@ GameObject:
   m_Component:
   - component: {fileID: 153867211}
   - component: {fileID: 153867210}
+  - component: {fileID: 153867213}
   - component: {fileID: 153867212}
   m_Layer: 0
   m_Name: Ketu Encounter
@@ -1150,6 +1151,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 15.352606, y: 1.1494727}
   m_EdgeRadius: 0
+--- !u!114 &153867213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153867209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1c4ea8c2ed7fba47af76c787c73d40b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &164985543
 PrefabInstance:
   m_ObjectHideFlags: 0

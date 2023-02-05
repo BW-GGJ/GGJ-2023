@@ -270,7 +270,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -686,7 +686,13 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7051972c1431630438e112d4d24c2fb2, type: 3}
   Pickup: {fileID: 8300000, guid: 5d56b453d1b500a48ac8fff61a5857d5, type: 3}
   Warn: {fileID: 8300000, guid: b4a325d89fec24d47b79460f8915b54c, type: 3}
-  Ambiance: {fileID: 0}
+  Ambiance: {fileID: 8300000, guid: dcf4bf135b0bfc34487d9a5f029c021e, type: 3}
+  Drop: {fileID: 8300000, guid: 34032fee72911bf47b13a24b57c72d74, type: 3}
+  Track1: {fileID: 8300000, guid: 47a671bca80b53f468bfd319e18bd418, type: 3}
+  Track2: {fileID: 8300000, guid: a9d7c30aedc1cde4cb65e3a66d5b2eba, type: 3}
+  Track3: {fileID: 8300000, guid: ad5273b749ffa6e44adf5e454d32f8a2, type: 3}
+  BossIntro: {fileID: 8300000, guid: 4b4b5eee62b75ea41ad5f54e7f2bbbce, type: 3}
+  BossFight: {fileID: 8300000, guid: c1edbfdd255d1f64f9f6f50c1a9f4006, type: 3}
   musicChannel: {fileID: 310446829}
   sfxChannels:
   - {fileID: 876698275}
