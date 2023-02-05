@@ -49,11 +49,11 @@ public class IceBucketChallenge : MonoBehaviour
 			//Will likely changes as the script developes
 			if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) 
 			{
-				slipMeter += slipMeterGain;
+				slipMeter += slipMeterGain * Time.deltaTime;
 			}
 			else if (slipMeter > 0)
 			{
-				slipMeter -= slipMeterDown;
+				slipMeter -= slipMeterDown * Time.deltaTime;
 				if (slipMeter < 0)
 					slipMeter = 0;
 			}
